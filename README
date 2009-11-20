@@ -1,0 +1,36 @@
+qooxdoo OO
+==========
+
+qooxdoo OO provides the object oriented features of qooxdoo (http://qooxdoo.org) as commonJS module. The module is largely generated from the standard qooxdoo code base. 
+
+State
+=====
+
+The module is still experimental. However basic functionality like "qx.Class.define" is working already.
+
+Working features:
+  * qx.Class.define
+  * qx.lang.*
+  * qx.core.Assert
+  
+Missing features:
+  * Events (including property change events)
+  * Single value binding
+  * qooxdoo unit tests
+  * dependency detection while importing qooxdoo code (still manual)
+  * documentation (at the moment the unit tests are the only documentation)
+  
+  
+License
+=======
+
+qxoo is covered by the same license as qooxdoo itself:
+
+LGPL: http://www.gnu.org/licenses/lgpl.html
+EPL: http://www.eclipse.org/org/documents/epl-v10.php
+
+
+Author
+======
+
+Fabian Jakobs <fabian.jakobs@1und1.de>

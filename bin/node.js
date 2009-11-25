@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var sys = require("sys");
+process.mixin(GLOBAL, require("sys"));
 
 function libDir() {
   var parts = __filename.split("/");
@@ -12,10 +12,6 @@ function libDir() {
 
 require.paths.push(libDir());
 
-
-require("qx");
-
-var o = new qx.core.Object();
-sys.print(o + "\n");
-
+var TestRunner = require("qxoo/test/NodeRunner").TestRunner;
+new TestRunner().add(require("qx/test/Class").Class).run();
 

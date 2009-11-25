@@ -40,7 +40,7 @@ function main(args)
   importer = new importer.Importer(qooxdooPath, libDir);
   importer.importQooxdoo();
   
-  require("test/runner").run(require("qxoo/test/all-tests"));
+  require("qxoo/test/All").main();
 }
 
 main(system.args);

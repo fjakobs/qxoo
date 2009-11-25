@@ -11,7 +11,4 @@ function libDir() {
 }
 
 require.paths.push(libDir());
-
-var TestRunner = require("qxoo/test/NodeRunner").TestRunner;
-new TestRunner().add(require("qx/test/Class").Class).run();
-
+require("qxoo/test/All").main();

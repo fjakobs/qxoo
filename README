@@ -18,6 +18,7 @@ Working features:
 Missing features:
   * dependency detection while importing qooxdoo code (still manual)
   * documentation (at the moment the unit tests are the only documentation)
+  * async unit tests
   
   
 License

@@ -12,11 +12,10 @@ Working features:
   * qx.Class.define
   * qx.lang.*
   * qx.core.Assert
+  * Property data binding
+  * Unit tests
   
 Missing features:
-  * Events (including property change events)
-  * Single value binding
-  * qooxdoo unit tests
   * dependency detection while importing qooxdoo code (still manual)
   * documentation (at the moment the unit tests are the only documentation)
   

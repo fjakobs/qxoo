@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-process.mixin(GLOBAL, require("sys"));
+var sys = require("sys");
+for (var key in sys)
+    GLOBAL[key] = sys[key];
 
 function libDir() {
   var parts = __filename.split("/");
